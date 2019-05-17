@@ -15,7 +15,7 @@ function onFileSelect(e) {
         let reader = new FileReader();
 
         reader.onload = function(e) {
-            let json = JSON.parse(e.target.result);
+            let level = JSON.parse(e.target.result);
             run(level);
         };
         
